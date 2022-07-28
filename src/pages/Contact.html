@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div class="h-full w-full absolute">
+        <!-- Navigation starts -->
+        <!-- Mobile -->
+        <!--Mobile sidebar start-->
+        <!--sidebar partie 1-->
+        <div id="mobile-nav" class="w-full xl:hidden h-full absolute z-40">
+          <div
+            class="bg-gray-800 opacity-50 inset-0 fixed w-full h-full"
+            onclick="sidebarHandler(false)"
+          ></div>
+          <div
+            class="w-64  absolute left-0 z-40 top-0 bg-white shadow flex-col justify-between transition duration-150 ease-in-out h-full"
+          >
+            <div class="flex flex-col justify-between h-full">
+              <div class="px-6 pt-4 overflow-y-auto">
+                <div class="flex items-center justify-between">
+                  <div aria-label="Home" role="img" class="flex items-center">
+                    <img
+                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg1.svg"
+                      alt="logo"
+                    />
+                    <p class="text-bold md:text2xl text-base pl-3 text-gray-800">
+                      My portofolio
+                    </p>
+                  </div>
+                  <button
+                    id="cross"
+                    class="hidden text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 rounded"
+                    onclick="sidebarHandler(false)"
+                  >
+                    <img
+                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg2.svg"
+                      alt="cross"
+                    />
+                  </button>
+                </div>
+                <ul class="f-m-m">
+                  <li class="text-white pt-8">
+                    <div class="flex items-center">
+                      <div class="md:w-6 md:h-6 w-5 h-5">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.16667 3H3.83333C3.3731
+                                                      3 3 3.3731 3
+                                                      3.83333V7.16667C3 7.6269
+                                                      3.3731 8 3.83333
+                                                      8H7.16667C7.6269 8 8 7.6269
+                                                      8 7.16667V3.83333C8 3.3731
+                                                      7.6269 3 7.16667 3Z"
+                            stroke="#667EEA"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.16667
+                                                          11.6667H3.83333C3.3731
+                                                          11.6667 3 12.0398 3
+                                                          12.5V15.8333C3 16.2936
+                                                          3.3731 16.6667 3.83333
+                                                          16.6667H7.16667C7.6269
+                                                          16.6667 8 16.2936 8
+                                                          15.8333V12.5C8 12.0398
+                                                          7.6269 11.6667 7.16667
+                                                          11.6667Z"
+                            stroke="#667EEA"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M16.1667
+                                                              11.6667H12.8333C12.3731
+                                                              11.6667 12 12.0398
+                                                              12 12.5V15.8334C12
+                                                              16.2936 12.3731
+                                                              16.6667 12.8333
+                                                              16.6667H16.1667C16.6269
+                                                              16.6667 17 16.2936
+                                                              17 15.8334V12.5C17
+                                                              12.0398 16.6269
+                                                              11.6667 16.1667
+                                                              11.6667Z"
+                            stroke="#667EEA"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M16.1667
+                                                                  3H12.8333C12.3731
+                                                                  3 12 3.3731 12
+                                                                  3.83333V7.16667C12
+                                                                  7.6269 12.3731 8
+                                                                  12.8333
+                                                                  8H16.1667C16.6269
+                                                                  8 17 7.6269 17
+                                                                  7.16667V3.83333C17
+                                                                  3.3731 16.6269 3
+                                                                  16.1667 3Z"
+                            stroke="#667EEA"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <a
+                        href="/src/index.html"
+                        class="text-indigo-500 ml-3 text-lg"
+                        >Home</a
+                      >
+                    </div>
+                  </li>
+                  <li class="text-gray-700 pt-8">
+                    <div class="flex items-center">
+                      <div class="flex items-center">
+                        <div class="md:w-6 md:h-6 w-5 h-5">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0
+                                                                      18 18"
+                            fill="none"
+                          >
+                            <path
+                              d="M2.33333
+                                                                          4.83333H4.83333C5.05435
+                                                                          4.83333
+                                                                          5.26631
+                                                                          4.74554
+                                                                          5.42259
+                                                                          4.58926C5.57887
+                                                                          4.43298
+                                                                          5.66667
+                                                                          4.22101
+                                                                          5.66667
+                                                                          4V3.16667C5.66667
+                                                                          2.72464
+                                                                          5.84226
+                                                                          2.30072
+                                                                          6.15482
+                                                                          1.98816C6.46738
+                                                                          1.67559
+                                                                          6.89131
+                                                                          1.5
+                                                                          7.33333
+                                                                          1.5C7.77536
+                                                                          1.5
+                                                                          8.19928
+                                                                          1.67559
+                                                                          8.51184
+                                                                          1.98816C8.8244
+                                                                          2.30072
+                                                                          9
+                                                                          2.72464
+                                                                          9
+                                                                          3.16667V4C9
+                                                                          4.22101
+                                                                          9.0878
+                                                                          4.43298
+                                                                          9.24408
+                                                                          4.58926C9.40036
+                                                                          4.74554
+                                                                          9.61232
+                                                                          4.83333
+                                                                          9.83333
+                                                                          4.83333H12.3333C12.5543
+                                                                          4.83333
+                                                                          12.7663
+                                                                          4.92113
+                                                                          12.9226
+                                                                          5.07741C13.0789
+                                                                          5.23369
+                                                                          13.1667
+                                                                          5.44565
+                                                                          13.1667
+                                                                          5.66667V8.16667C13.1667
+                                                                          8.38768
+                                                                          13.2545
+                                                                          8.59964
+                                                                          13.4107
+                                                                          8.75592C13.567
+                                                                          8.9122
+                                                                          13.779 9
+                                                                          14
+                                                                          9H14.8333C15.2754
+                                                                          9
+                                                                          15.6993
+                                                                          9.17559
+                                                                          16.0118
+                                                                          9.48816C16.3244
+                                                                          9.80072
+                                                                          16.5
+                                                                          10.2246
+                                                                          16.5
+                                                                          10.6667C16.5
+                                                                          11.1087
+                                                                          16.3244
+                                                                          11.5326
+                                                                          16.0118
+                                                                          11.8452C15.6993
+                                                                          12.1577
+                                                                          15.2754
+                                                                          12.3333
+                                                                          14.8333
+                                                                          12.3333H14C13.779
+                                                                          12.3333
+                                                                          13.567
+                                                                          12.4211
+                                                                          13.4107
+                                                                          12.5774C13.2545
+                                                                          12.7337
+                                                                          13.1667
+                                                                          12.9457
+                                                                          13.1667
+                                                                          13.1667V15.6667C13.1667
+                                                                          15.8877
+                                                                          13.0789
+                                                                          16.0996
+                                                                          12.9226
+                                                                          16.2559C12.7663
+                                                                          16.4122
+                                                                          12.5543
+                                                                          16.5
+                                                                          12.3333
+                                                                          16.5H9.83333C9.61232
+                                                                          16.5
+                                                                          9.40036
+                                                                          16.4122
+                                                                          9.24408
+                                                                          16.2559C9.0878
+                                                                          16.0996
+                                                                          9
+                                                                          15.8877
+                                                                          9
+                                                                          15.6667V14.8333C9
+                                                                          14.3913
+                                                                          8.8244
+                                                                          13.9674
+                                                                          8.51184
+                                                                          13.6548C8.19928
+                                                                          13.3423
+                                                                          7.77536
+                                                                          13.1667
+                                                                          7.33333
+                                                                          13.1667C6.89131
+                                                                          13.1667
+                                                                          6.46738
+                                                                          13.3423
+                                                                          6.15482
+                                                                          13.6548C5.84226
+                                                                          13.9674
+                                                                          5.66667
+                                                                          14.3913
+                                                                          5.66667
+                                                                          14.8333V15.6667C5.66667
+                                                                          15.8877
+                                                                          5.57887
+                                                                          16.0996
+                                                                          5.42259
+                                                                          16.2559C5.26631
+                                                                          16.4122
+                                                                          5.05435
+                                                                          16.5
+                                                                          4.83333
+                                                                          16.5H2.33333C2.11232
+                                                                          16.5
+                                                                          1.90036
+                                                                          16.4122
+                                                                          1.74408
+                                                                          16.2559C1.5878
+                                                                          16.0996
+                                                                          1.5
+                                                                          15.8877
+                                                                          1.5
+                                                                          15.6667V13.1667C1.5
+                                                                          12.9457
+                                                                          1.5878
+                                                                          12.7337
+                                                                          1.74408
+                                                                          12.5774C1.90036
+                                                                          12.4211
+                                                                          2.11232
+                                                                          12.3333
+                                                                          2.33333
+                                                                          12.3333H3.16667C3.60869
+                                                                          12.3333
+                                                                          4.03262
+                                                                          12.1577
+                                                                          4.34518
+                                                                          11.8452C4.65774
+                                                                          11.5326
+                                                                          4.83333
+                                                                          11.1087
+                                                                          4.83333
+                                                                          10.6667C4.83333
+                                                                          10.2246
+                                                                          4.65774
+                                                                          9.80072
+                                                                          4.34518
+                                                                          9.48816C4.03262
+                                                                          9.17559
+                                                                          3.60869
+                                                                          9
+                                                                          3.16667
+                                                                          9H2.33333C2.11232
+                                                                          9
+                                                                          1.90036
+                                                                          8.9122
+                                                                          1.74408
+                                                                          8.75592C1.5878
+                                                                          8.59964
+                                                                          1.5
+                                                                          8.38768
+                                                                          1.5
+                                                                          8.16667V5.66667C1.5
+                                                                          5.44565
+                                                                          1.5878
+                                                                          5.23369
+                                                                          1.74408
+                                                                          5.07741C1.90036
+                                                                          4.92113
+                                                                          2.11232
+                                                                          4.83333
+                                                                          2.33333
+                                                                          4.83333"
+                              stroke="currentColor"
+                              stroke-width="1"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+  
+                        <a
+                          href="#"
+                          class="text-gray-700 ml-3 text-lg"
+                          >About me</a
+                        >
+                      </div>
+                      <button
+                        id="chevronup"
+                        onclick="listHandler(true)"
+                        class="ml-4 focus:outline-none focus:ring-2 focus:ring-gray-500 rounded"
+                      >
+                        <img
+                          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg4.svg"
+                          alt="up"
+                        />
+                      </button>
+                      <button
+                        id="chevrondown"
+                        onclick="listHandler(false)"
+                        class="hidden ml-4 focus:outline-none focus:ring-2 focus:ring-gray-500 rounded"
+                      >
+                        <img
+                          class="transform rotate-180"
+                          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg4.svg"
+                          alt="down"
+                        />
+                      </button>
+                    </div>
+                    <div id="list" class="hidden">
+                      <ul class="my-3">
+                        <li class="text-sm text-indigo-500 py-2 px-6">
+                          <a href="./About.html"> My background </a>
+                        </li>
+                        <li
+                          class="text-sm text-gray-800 hover:text-indigo-500 py-2 px-6"
+                        >
+                          <a href="./Contact.html">Contact me </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!--sidebar partie 2-->
+                </ul>
+              </div>
+              <div class="w-full">
+                <div class="flex justify-center mb-4 w-full px-6"></div>
+                <div class="border-t border-gray-300">
+                  <div class="w-full flex items-center justify-between px-6 pt-1">
+                    <div class="flex items-center">
+                      <!--photo side bar -->
+                      <img
+                        alt="display
+                                                                  avatar"
+                        role="img"
+                        src="/image_portofolio/avatar.PNG"
+                        class="w-8 h-8 rounded-md"
+                      />
+                      <p class="text-gray-800 text-base leading-4 ml-2">
+                        Katchi Evans
+                      </p>
+                    </div>
+                    <ul class="flex">
+                      <li class="cursor-pointer text-white pt-5 pb-3">
+                        <a href="javascript:void(0)">
+                          <img
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg5.svg"
+                            alt="message"
+                          />
+                        </a>
+                      </li>
+                      <li class="cursor-pointer text-white pt-5 pb-3 pl-3">
+                        <a href="javascript:void(0)">
+                          <img
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg6.svg"
+                            alt="notifications"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--modile side bar end-->
+        <!-- Mobile  version tablette start -->
+        <nav class="w-full mx-auto bg-white shadow">
+          <div
+            class="container px-6 justify-between h-16 flex items-center lg:items-stretch mx-auto"
+          >
+            <div class="h-full flex items-center">
+              <div aria-label="Home" role="img" class="mr-10 flex items-center">
+                <img
+                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg1.svg"
+                  alt="logo"
+                />
+                <h3
+                  class="text-base text-gray-800 font-bold tracking-normal leading-tight ml-3 hidden lg:block"
+                >
+                  My portofolio
+                </h3>
+              </div>
+              <ul class="pr-12 xl:flex items-center h-full hidden">
+                <li
+                  class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-indigo-700 tracking-normal border-b-2 border-indigo-700"
+                >
+                  <a href="/src/index.html"> Home</a>
+                </li>
+                <li
+                  class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mx-10 tracking-normal"
+                >
+                  <a href="./About.html">My background</a>
+                </li>
+                <li
+                  class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mr-10 tracking-normal"
+                >
+                  <a href="./Contact.html"> Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="h-full xl:flex items-center justify-end hidden">
+              <div class="w-full h-full flex items-center">
+                <div class="w-full pr-12 h-full flex items-center border-r"></div>
+                <div class="w-full h-full flex">
+                  <div
+                    aria-haspopup="true"
+                    class="cursor-pointer w-full flex items-center justify-end relative"
+                  >
+                    <button
+                      aria-haspopup="true"
+                      class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 rounded flex items-center"
+                    >
+                      <img
+                        class="rounded-full h-10 w-10 object-cover"
+                        src="/image_portofolio/avatar.PNG"
+                        alt="avatar"
+                      />
+                      <p class="text-gray-800 text-sm ml-2">Katchi Evans</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="visible xl:hidden flex items-center">
+              <div>
+                <button
+                  id="menu"
+                  class="text-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                  onclick="sidebarHandler(true)"
+                >
+                  <img
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg7.svg"
+                    alt="toggler"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Navigation ends version tablette end  -->
+      </div>
+      <!-- navbar end -->
+      <!-- navbar end -->
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">Mes informations</h1>
+            <br>
+       
+           
+
+            <div class="flex items-center justify-center">
+                <div class="flex flex-col items-center">
+                    <img class="object-cover w-full rounded-full h-80 aspect-square" src="/image_portofolio/IMG_E7925.JPG" 
+                    data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+                    alt="">
+                    
+                    <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Evans Katchi</h1>
+                    
+                    <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 text-center">
+                        Full stack developer
+                        <br>
+                        <span>Contact : +225 01-72-54-20-75</span>
+                        <br>
+                        <span>Email : Evanskatchi345@icloud.com</span>
+                    </p>
+                    
+                    <div class="flex mt-3 -mx-2">
+                        <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z">
+                                </path>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
+                                </path>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        AOS.init();
+      </script>
+      <script src="/src/assets/index.js"></script>
+</body>
+</html>
