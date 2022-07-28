@@ -1,78 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portoflio part 3</title>
-  
-</head>
-<link href="dist/output.css" rel="stylesheet" />
-<link rel="stylesheet" href="./assets/index.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<body>
-
+  </head>
+  <link href="dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/index.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <body>
     <div class="h-full w-full absolute">
-        <!-- Navigation starts -->
-        <!-- Mobile -->
-        <!--Mobile sidebar start-->
-        <!--sidebar partie 1-->
-        <div id="mobile-nav" class="w-full xl:hidden h-full absolute z-40">
-          <div
-            class="bg-gray-800 opacity-50 inset-0 fixed w-full h-full"
-            onclick="sidebarHandler(false)"
-          ></div>
-          <div
-            class="w-64  absolute left-0 z-40 top-0 bg-white shadow flex-col justify-between transition duration-150 ease-in-out h-full"
-          >
-            <div class="flex flex-col justify-between h-full">
-              <div class="px-6 pt-4 overflow-y-auto">
-                <div class="flex items-center justify-between">
-                  <div aria-label="Home" role="img" class="flex items-center">
-                    <img
-                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg1.svg"
-                      alt="logo"
-                    />
-                    <p class="text-bold md:text2xl text-base pl-3 text-gray-800">
-                      My portofolio
-                    </p>
-                  </div>
-                  <button
-                    id="cross"
-                    class="hidden text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 rounded"
-                    onclick="sidebarHandler(false)"
-                  >
-                    <img
-                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg2.svg"
-                      alt="cross"
-                    />
-                  </button>
+      <!-- Navigation starts -->
+      <!-- Mobile -->
+      <!--Mobile sidebar start-->
+      <!--sidebar partie 1-->
+      <div id="mobile-nav" class="w-full xl:hidden h-full absolute z-40">
+        <div
+          class="bg-gray-800 opacity-50 inset-0 fixed w-full h-full"
+          onclick="sidebarHandler(false)"
+        ></div>
+        <div
+          class="w-64 absolute left-0 z-40 top-0 bg-white shadow flex-col justify-between transition duration-150 ease-in-out h-full"
+        >
+          <div class="flex flex-col justify-between h-full">
+            <div class="px-6 pt-4 overflow-y-auto">
+              <div class="flex items-center justify-between">
+                <div aria-label="Home" role="img" class="flex items-center">
+                  <img
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg1.svg"
+                    alt="logo"
+                  />
+                  <p class="text-bold md:text2xl text-base pl-3 text-gray-800">
+                    My portofolio
+                  </p>
                 </div>
-                <ul class="f-m-m">
-                  <li class="text-white pt-8">
-                    <div class="flex items-center">
-                      <div class="md:w-6 md:h-6 w-5 h-5">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                        >
-                          <path
-                            d="M7.16667 3H3.83333C3.3731
+                <button
+                  id="cross"
+                  class="hidden text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 rounded"
+                  onclick="sidebarHandler(false)"
+                >
+                  <img
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg2.svg"
+                    alt="cross"
+                  />
+                </button>
+              </div>
+              <ul class="f-m-m">
+                <li class="text-white pt-8">
+                  <div class="flex items-center">
+                    <div class="md:w-6 md:h-6 w-5 h-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.16667 3H3.83333C3.3731
                                                       3 3 3.3731 3
                                                       3.83333V7.16667C3 7.6269
                                                       3.3731 8 3.83333
                                                       8H7.16667C7.6269 8 8 7.6269
                                                       8 7.16667V3.83333C8 3.3731
                                                       7.6269 3 7.16667 3Z"
-                            stroke="#667EEA"
-                            stroke-width="1"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M7.16667
+                          stroke="#667EEA"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7.16667
                                                           11.6667H3.83333C3.3731
                                                           11.6667 3 12.0398 3
                                                           12.5V15.8333C3 16.2936
@@ -82,13 +80,13 @@
                                                           15.8333V12.5C8 12.0398
                                                           7.6269 11.6667 7.16667
                                                           11.6667Z"
-                            stroke="#667EEA"
-                            stroke-width="1"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M16.1667
+                          stroke="#667EEA"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16.1667
                                                               11.6667H12.8333C12.3731
                                                               11.6667 12 12.0398
                                                               12 12.5V15.8334C12
@@ -100,13 +98,13 @@
                                                               12.0398 16.6269
                                                               11.6667 16.1667
                                                               11.6667Z"
-                            stroke="#667EEA"
-                            stroke-width="1"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M16.1667
+                          stroke="#667EEA"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16.1667
                                                                   3H12.8333C12.3731
                                                                   3 12 3.3731 12
                                                                   3.83333V7.16667C12
@@ -117,32 +115,30 @@
                                                                   7.16667V3.83333C17
                                                                   3.3731 16.6269 3
                                                                   16.1667 3Z"
-                            stroke="#667EEA"
-                            stroke-width="1"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </div>
-                      <a
-                        href="index.html"
-                        class="text-indigo-500 ml-3 text-lg"
-                        >Home</a
-                      >
+                          stroke="#667EEA"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
                     </div>
-                  </li>
-                  <li class="text-gray-700 pt-8">
+                    <a href="index.html" class="text-indigo-500 ml-3 text-lg"
+                      >Home</a
+                    >
+                  </div>
+                </li>
+                <li class="text-gray-700 pt-8">
+                  <div class="flex items-center">
                     <div class="flex items-center">
-                      <div class="flex items-center">
-                        <div class="md:w-6 md:h-6 w-5 h-5">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0
+                      <div class="md:w-6 md:h-6 w-5 h-5">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0
                                                                       18 18"
-                            fill="none"
-                          >
-                            <path
-                              d="M2.33333
+                          fill="none"
+                        >
+                          <path
+                            d="M2.33333
                                                                           4.83333H4.83333C5.05435
                                                                           4.83333
                                                                           5.26631
@@ -343,257 +339,305 @@
                                                                           4.83333
                                                                           2.33333
                                                                           4.83333"
-                              stroke="currentColor"
-                              stroke-width="1"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </div>
-  
-                        <a
-                          href="#"
-                          class="text-gray-700 ml-3 text-lg"
-                          >About me</a
-                        >
+                            stroke="currentColor"
+                            stroke-width="1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
                       </div>
-                      <button
-                        id="chevronup"
-                        onclick="listHandler(true)"
-                        class="ml-4 focus:outline-none focus:ring-2 focus:ring-gray-500 rounded"
+
+                      <a href="#" class="text-gray-700 ml-3 text-lg"
+                        >About me</a
                       >
-                        <img
-                          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg4.svg"
-                          alt="up"
-                        />
-                      </button>
-                      <button
-                        id="chevrondown"
-                        onclick="listHandler(false)"
-                        class="hidden ml-4 focus:outline-none focus:ring-2 focus:ring-gray-500 rounded"
-                      >
-                        <img
-                          class="transform rotate-180"
-                          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg4.svg"
-                          alt="down"
-                        />
-                      </button>
                     </div>
-                    <div id="list" class="hidden">
-                      <ul class="my-3">
-                        <li class="text-sm text-indigo-500 py-2 px-6">
-                          <a href="About.html"> My background </a>
-                        </li>
-                        <li
-                          class="text-sm text-gray-800 hover:text-indigo-500 py-2 px-6"
-                        >
-                          <a href="Contact.html">Contact me </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <!--sidebar partie 2-->
-                </ul>
-              </div>
-              <div class="w-full">
-                <div class="flex justify-center mb-4 w-full px-6"></div>
-                <div class="border-t border-gray-300">
-                  <div class="w-full flex items-center justify-between px-6 pt-1">
-                    <div class="flex items-center">
-                      <!--photo side bar -->
+                    <button
+                      id="chevronup"
+                      onclick="listHandler(true)"
+                      class="ml-4 focus:outline-none focus:ring-2 focus:ring-gray-500 rounded"
+                    >
                       <img
-                        alt="display
-                                                                  avatar"
-                        role="img"
-                        src="image_portofolio/avatar.PNG"
-                        class="w-8 h-8 rounded-md"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg4.svg"
+                        alt="up"
                       />
-                      <p class="text-gray-800 text-base leading-4 ml-2">
-                        Katchi Evans
-                      </p>
-                    </div>
-                    <ul class="flex">
-                      <li class="cursor-pointer text-white pt-5 pb-3">
-                        <a href="javascript:void(0)">
-                          <img
-                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg5.svg"
-                            alt="message"
-                          />
-                        </a>
+                    </button>
+                    <button
+                      id="chevrondown"
+                      onclick="listHandler(false)"
+                      class="hidden ml-4 focus:outline-none focus:ring-2 focus:ring-gray-500 rounded"
+                    >
+                      <img
+                        class="transform rotate-180"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg4.svg"
+                        alt="down"
+                      />
+                    </button>
+                  </div>
+                  <div id="list" class="hidden">
+                    <ul class="my-3">
+                      <li class="text-sm text-indigo-500 py-2 px-6">
+                        <a href="About.html"> My background </a>
                       </li>
-                      <li class="cursor-pointer text-white pt-5 pb-3 pl-3">
-                        <a href="javascript:void(0)">
-                          <img
-                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg6.svg"
-                            alt="notifications"
-                          />
-                        </a>
+                      <li
+                        class="text-sm text-gray-800 hover:text-indigo-500 py-2 px-6"
+                      >
+                        <a href="Contact.html">Contact me </a>
                       </li>
                     </ul>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--modile side bar end-->
-        <!-- Mobile  version tablette start -->
-        <nav class="w-full mx-auto bg-white shadow">
-          <div
-            class="container px-6 justify-between h-16 flex items-center lg:items-stretch mx-auto"
-          >
-            <div class="h-full flex items-center">
-              <div aria-label="Home" role="img" class="mr-10 flex items-center">
-                <img
-                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg1.svg"
-                  alt="logo"
-                />
-                <h3
-                  class="text-base text-gray-800 font-bold tracking-normal leading-tight ml-3 hidden lg:block"
-                >
-                  My portofolio
-                </h3>
-              </div>
-              <ul class="pr-12 xl:flex items-center h-full hidden">
-                <li
-                  class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-indigo-700 tracking-normal border-b-2 border-indigo-700"
-                >
-                  <a href="index.html"> Home</a>
                 </li>
-                <li
-                  class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mx-10 tracking-normal"
-                >
-                  <a href="About.html">My background</a>
-                </li>
-                <li
-                  class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mr-10 tracking-normal"
-                >
-                  <a href="Contact.html"> Contact</a>
-                </li>
+                <!--sidebar partie 2-->
               </ul>
             </div>
-            <div class="h-full xl:flex items-center justify-end hidden">
-              <div class="w-full h-full flex items-center">
-                <div class="w-full pr-12 h-full flex items-center border-r"></div>
-                <div class="w-full h-full flex">
-                  <div
-                    aria-haspopup="true"
-                    class="cursor-pointer w-full flex items-center justify-end relative"
-                  >
-                    <button
-                      aria-haspopup="true"
-                      class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 rounded flex items-center"
-                    >
-                      <img
-                        class="rounded-full h-10 w-10 object-cover"
-                        src="image_portofolio/avatar.PNG"
-                        alt="avatar"
-                      />
-                      <p class="text-gray-800 text-sm ml-2">Katchi Evans</p>
-                    </button>
+            <div class="w-full">
+              <div class="flex justify-center mb-4 w-full px-6"></div>
+              <div class="border-t border-gray-300">
+                <div class="w-full flex items-center justify-between px-6 pt-1">
+                  <div class="flex items-center">
+                    <!--photo side bar -->
+                    <img
+                      alt="display
+                                                                  avatar"
+                      role="img"
+                      src="image_portofolio/avatar.PNG"
+                      class="w-8 h-8 rounded-md"
+                    />
+                    <p class="text-gray-800 text-base leading-4 ml-2">
+                      Katchi Evans
+                    </p>
                   </div>
+                  <ul class="flex">
+                    <li class="cursor-pointer text-white pt-5 pb-3">
+                      <a href="javascript:void(0)">
+                        <img
+                          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg5.svg"
+                          alt="message"
+                        />
+                      </a>
+                    </li>
+                    <li class="cursor-pointer text-white pt-5 pb-3 pl-3">
+                      <a href="javascript:void(0)">
+                        <img
+                          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg6.svg"
+                          alt="notifications"
+                        />
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-              </div>
-            </div>
-            <div class="visible xl:hidden flex items-center">
-              <div>
-                <button
-                  id="menu"
-                  class="text-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
-                  onclick="sidebarHandler(true)"
-                >
-                  <img
-                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg7.svg"
-                    alt="toggler"
-                  />
-                </button>
               </div>
             </div>
           </div>
-        </nav>
-        <!-- Navigation ends version tablette end  -->
+        </div>
       </div>
-      <!-- navbar end -->
-      <!--section start-->
-      <br>
-      <br>
-      <br>
-      <br>
-     
-      <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
-        <div class="flex flex-col lg:flex-row justify-between gap-8">
-            <div class="w-full lg:w-5/12 flex flex-col justify-center">
-                <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4">About me</h1>
-                <p class="font-normal text-base leading-6 text-gray-600 dark:text-white text-left" data-aos="fade-right">
-                    J'ai d'abord commencer par une filière STMG et ensuite obtenue un bac en economie en candidat libre 
-                    j'ai decidé d'opter pour une filière en ingenerie a IGA casablanca 
-                    mais a ce moment je n'avais pas encore l'amour de l'informatique donc j'ai decider d'arreter et de passer a autre chose 
-                    de m'inscrire en ecole de commerce et gestion a ECG cote d'ivoire 
-                    mais la je n'avais toujours pas trouvé ma voix 
-                    c'est alors que je me suis tourné vers une filière en Science-Eco
-                    Puis finalement je me suis arrété en deuxieme année faigué et agacé des methodes 
-                    d'apprentissage de l'ecole traditionnelle et j'ai decider de decouvrir 
-                    l'informatique en commencant apprendre sur des sites en ligne tel que my Mooc et Openclassroom
-                    J'ai commencer a apprendre le language Python et seduit par celui-ci jai voulu accroitre mes 
-                    connaissances et c'est Alors que j'ai trouvé Gomycode 
-                    ou jai continuer sur cette voix et Obtenue deux certifactions dans le meme temps
-                    Une en coding with python et l'aute en full Stack dev 
-                </p>
+      <!--modile side bar end-->
+      <!-- Mobile  version tablette start -->
+      <nav class="w-full mx-auto bg-white shadow">
+        <div
+          class="container px-6 justify-between h-16 flex items-center lg:items-stretch mx-auto"
+        >
+          <div class="h-full flex items-center">
+            <div aria-label="Home" role="img" class="mr-10 flex items-center">
+              <img
+                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg1.svg"
+                alt="logo"
+              />
+              <h3
+                class="text-base text-gray-800 font-bold tracking-normal leading-tight ml-3 hidden lg:block"
+              >
+                My portofolio
+              </h3>
             </div>
-            <div class="w-full lg:w-8/12 rounded-full">
-                <img class="w-full h-86 rounded-full" src="image_portofolio/IMG_7806.JPG" alt="A group of People"  data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"/>
-            </div>
-        </div>
-
-        <div class="flex lg:flex-row flex-col justify-between gap-8 pt-12">
-            <div class="w-full lg:w-5/12 flex flex-col justify-center">
-                <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4">My story</h1>
-                <p class="font-normal text-base leading-6 text-gray-600 dark:text-white text-left">J'ai pas mal essayer plusieurs branche avant de trouver celle qui me covenait le mieux 
-                    mais cela ma fait du bien car j'ai pu beaucoup apprendre ces dernieres anneés et j'ai pu enfi trouver la branche qui me 
-                    correspondait le mieux 
-                </p>
-            </div>
-            <div class="w-full lg:w-8/12 lg:pt-8">
-                <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-4 shadow-lg rounded-md" data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000">
-                    <div class="p-4 pb-6 flex justify-center flex-col items-center">
-                        <img class="md:block hidden h-28 rounded-lg" src="image_portofolio/IMG_7905.JPG" alt="Alexa featured Image" />
-                        <img class="md:hidden block rounded-lg  " src="image_portofolio/IMG_7905.JPG" alt="Alexa featured Image" />
-                    </div>
-                    <div class="p-4 pb-6 flex justify-center flex-col items-center">
-                        <img class="md:block hidden h-28 rounded-lg" src="image_portofolio/IMG_E7922.JPG" alt="Olivia featured Image" />
-                        <img class="md:hidden block rounded-lg" src="image_portofolio/IMG_E7922.JPG" alt="Olivia featured Image" />
-                      
-                    </div>
-                    <div class="p-4 pb-6 flex justify-center flex-col items-center">
-                        <img class="md:block hidden h-28 rounded-lg" src="image_portofolio/IMG_E7923.JPG" alt="Liam featued Image" />
-                        <img class="md:hidden block rounded-lg" src="image_portofolio/IMG_E7923.JPG" alt="Liam featued Image" />
-                        
-                    </div>
-                    <div class="p-4 pb-6 flex justify-center flex-col items-center">
-                        <img class="md:block hidden h-28 rounded-lg" src="image_portofolio/IMG_E7924.JPG" alt="Elijah featured image" />
-                        <img class="md:hidden block rounded-lg" src="image_portofolio/IMG_E7924.JPG" alt="Elijah featured image" />
-                    </div>
+            <ul class="pr-12 xl:flex items-center h-full hidden">
+              <li
+                class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-indigo-700 tracking-normal border-b-2 border-indigo-700"
+              >
+                <a href="index.html"> Home</a>
+              </li>
+              <li
+                class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mx-10 tracking-normal"
+              >
+                <a href="About.html">My background</a>
+              </li>
+              <li
+                class="hover:text-indigo-700 cursor-pointer h-full flex items-center text-sm text-gry-800 mr-10 tracking-normal"
+              >
+                <a href="Contact.html"> Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="h-full xl:flex items-center justify-end hidden">
+            <div class="w-full h-full flex items-center">
+              <div class="w-full pr-12 h-full flex items-center border-r"></div>
+              <div class="w-full h-full flex">
+                <div
+                  aria-haspopup="true"
+                  class="cursor-pointer w-full flex items-center justify-end relative"
+                >
+                  <button
+                    aria-haspopup="true"
+                    class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 rounded flex items-center"
+                  >
+                    <img
+                      class="rounded-full h-10 w-10 object-cover"
+                      src="image_portofolio/avatar.PNG"
+                      alt="avatar"
+                    />
+                    <p class="text-gray-800 text-sm ml-2">Katchi Evans</p>
+                  </button>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="visible xl:hidden flex items-center">
+            <div>
+              <button
+                id="menu"
+                class="text-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                onclick="sidebarHandler(true)"
+              >
+                <img
+                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_Grey_background-svg7.svg"
+                  alt="toggler"
+                />
+              </button>
+            </div>
+          </div>
         </div>
+      </nav>
+      <!-- Navigation ends version tablette end  -->
+    </div>
+    <!-- navbar end -->
+    <!--section start-->
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div
+      class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4"
+    >
+      <div class="flex flex-col lg:flex-row justify-between gap-8">
+        <div class="w-full lg:w-5/12 flex flex-col justify-center">
+          <h1
+            class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4"
+          >
+            About me
+          </h1>
+          <p
+            class="font-normal text-base leading-6 text-gray-600 dark:text-white text-left"
+            data-aos="fade-right"
+          >
+            J'ai d'abord commencer par une filière STMG et ensuite obtenue un
+            bac en economie en candidat libre j'ai decidé d'opter pour une
+            filière en ingenerie a IGA casablanca mais a ce moment je n'avais
+            pas encore l'amour de l'informatique donc j'ai decider d'arreter et
+            de passer a autre chose de m'inscrire en ecole de commerce et
+            gestion a ECG cote d'ivoire mais la je n'avais toujours pas trouvé
+            ma voix c'est alors que je me suis tourné vers une filière en
+            Science-Eco Puis finalement je me suis arrété en deuxieme année
+            faigué et agacé des methodes d'apprentissage de l'ecole
+            traditionnelle et j'ai decider de decouvrir l'informatique en
+            commencant apprendre sur des sites en ligne tel que my Mooc et
+            Openclassroom J'ai commencer a apprendre le language Python et
+            seduit par celui-ci jai voulu accroitre mes connaissances et c'est
+            Alors que j'ai trouvé Gomycode ou jai continuer sur cette voix et
+            Obtenue deux certifactions dans le meme temps Une en coding with
+            python et l'aute en full Stack dev
+          </p>
+        </div>
+        <div class="w-full lg:w-8/12 rounded-full">
+          <img
+            class="w-full h-86 rounded-full"
+            src="image_portofolio/IMG_7806.JPG"
+            alt="A group of People"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          />
+        </div>
+      </div>
+
+      <div class="flex lg:flex-row flex-col justify-between gap-8 pt-12">
+        <div class="w-full lg:w-5/12 flex flex-col justify-center">
+          <h1
+            class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4"
+          >
+            My story
+          </h1>
+          <p
+            class="font-normal text-base leading-6 text-gray-600 dark:text-white text-left"
+          >
+            J'ai pas mal essayer plusieurs branche avant de trouver celle qui me
+            covenait le mieux mais cela ma fait du bien car j'ai pu beaucoup
+            apprendre ces dernieres anneés et j'ai pu enfi trouver la branche
+            qui me correspondait le mieux
+          </p>
+        </div>
+        <div class="w-full lg:w-8/12 lg:pt-8">
+          <div
+            class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-4 shadow-lg rounded-md"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <div class="p-4 pb-6 flex justify-center flex-col items-center">
+              <img
+                class="md:block hidden h-28 rounded-lg"
+                src="image_portofolio/IMG_7905.JPG"
+                alt="Alexa featured Image"
+              />
+              <img
+                class="md:hidden block rounded-lg"
+                src="image_portofolio/IMG_7905.JPG"
+                alt="Alexa featured Image"
+              />
+            </div>
+            <div class="p-4 pb-6 flex justify-center flex-col items-center">
+              <img
+                class="md:block hidden h-28 rounded-lg"
+                src="image_portofolio/IMG_E7922.JPG"
+                alt="Olivia featured Image"
+              />
+              <img
+                class="md:hidden block rounded-lg"
+                src="image_portofolio/IMG_E7922.JPG"
+                alt="Olivia featured Image"
+              />
+            </div>
+            <div class="p-4 pb-6 flex justify-center flex-col items-center">
+              <img
+                class="md:block hidden h-28 rounded-lg"
+                src="image_portofolio/IMG_E7923.JPG"
+                alt="Liam featued Image"
+              />
+              <img
+                class="md:hidden block rounded-lg"
+                src="image_portofolio/IMG_E7923.JPG"
+                alt="Liam featued Image"
+              />
+            </div>
+            <div class="p-4 pb-6 flex justify-center flex-col items-center">
+              <img
+                class="md:block hidden h-28 rounded-lg"
+                src="image_portofolio/IMG_E7924.JPG"
+                alt="Elijah featured image"
+              />
+              <img
+                class="md:hidden block rounded-lg"
+                src="image_portofolio/IMG_E7924.JPG"
+                alt="Elijah featured image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-      
- 
-    
-    
-   
-    
-    
-     
     <!--section End-->
     <script>
-        AOS.init();
-      </script>
+      AOS.init();
+    </script>
     <script src="/src/assets/index.js"></script>
-</body>
-</html>   
+  </body>
+</html>
